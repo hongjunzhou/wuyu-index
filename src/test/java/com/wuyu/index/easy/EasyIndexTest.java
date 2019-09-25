@@ -66,6 +66,7 @@ public class EasyIndexTest {
 		index.addIndex(DirectEnum.MUSIC, 1);
 		castIds = index.query(Arrays.asList(DirectEnum.BEIJING,DirectEnum.MUSIC));
 		Assert.assertTrue(castIds.contains(1));
+		Assert.assertTrue(castIds.contains(2));
 	}
 
 }
